@@ -12,7 +12,7 @@ if not hasattr(config, 'MODIJI_API_KEY'):
     raise Exception("Please add MODIJI_API_KEY to your config.py")
 
 # API endpoint
-MODIJI_API_URL = "https://api.modijiurl.com/api"
+MODIJI_API_URL = "https://api.linkshortify.com/api"
 
 @Client.on_message(filters.command("short") & filters.user(config.ADMIN_IDS))  
 async def short_url_command(client, message):
